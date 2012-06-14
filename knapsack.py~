@@ -1,0 +1,23 @@
+#given a list of numbers, find out all the combinations where some of the numbers add up to another number in the list
+#O(nlogn)
+def findSubsetSort(set,k,t):
+    set.sort()
+    if sum(x for x in set[:k]) < t: return set[:k]
+    return False
+    
+#O(nk)
+def findSubsetSmallest(set,k,t):
+    ret = []
+    for i in range(0,k):
+        b = min(set)
+        ret.append(b)
+        set.remove(b)#destructive
+    if sum(x for x in ret) < t: return ret
+    return False
+
+a = [18.1, 55.1, 91.2, 74.6, 73.0, 85.9, 73.9, 81.4, 87.1, 49.3, 88.8, 5.7, 26.3, 7.1, 58.2, 31.7, 5.8, 76.9, 16.5, 8.1, 48.3, 6.8, 92.4, 83.0, 19.6]
+
+print(findSubsetSort(a,3,98.2))
+print(findSubsetSmallest(a,3,98.2))
+
+

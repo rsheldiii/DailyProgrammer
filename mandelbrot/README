@@ -1,0 +1,5 @@
+mandlebrot program using surfarrays in pygame with picture save feature.
+
+I think the controls are left click to zoom, right click to unzoom one level, middle click to save picture to CWD
+
+zooming takes a while. It's recalculating all points

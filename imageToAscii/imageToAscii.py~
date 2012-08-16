@@ -52,7 +52,7 @@ def coolProgram():
     
     
     
-actuallyProgram()
+asciiArt()
     
     
     

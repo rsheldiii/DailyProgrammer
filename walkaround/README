@@ -1,0 +1,3 @@
+walkaround rasterizer.
+
+basically a pen that works on a per-pixel basis. NESW and T (i think t), where NESW moves the pen north,south,east, or west, and T makes the pixel black. creates a b+w image
